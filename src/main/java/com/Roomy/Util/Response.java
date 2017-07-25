@@ -5,7 +5,7 @@ public class Response {
 	public Response(int statusCode, String statusMessage, String customerToken, Object result) {
 		this.statusCode = statusCode;
 		this.statusMessage = statusMessage;
-		this.jwtToken = jwtToken;
+		this.customerToken = customerToken;
 		this.result = result;
 	}
 
