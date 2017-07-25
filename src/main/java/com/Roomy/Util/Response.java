@@ -2,7 +2,7 @@ package com.Roomy.Util;
 
 public class Response {
 
-	public Response(int statusCode, String statusMessage, String jwtToken, Object result) {
+	public Response(int statusCode, String statusMessage, String customerToken, Object result) {
 		this.statusCode = statusCode;
 		this.statusMessage = statusMessage;
 		this.jwtToken = jwtToken;
@@ -12,7 +12,7 @@ public class Response {
 	private int statusCode;
 	private String statusMessage;
 	private Object result;
-	private String jwtToken;
+	private String customerToken;
 
 	public Object getResult() {
 		return result;
@@ -38,12 +38,12 @@ public class Response {
 		this.statusMessage = statusMessage;
 	}
 
-	public String getJwtToken() {
-		return jwtToken;
+	public String getCustomerToken() {
+		return customerToken;
 	}
 
-	public void setJwtToken(String jwtToken) {
-		this.jwtToken = jwtToken;
+	public void setCustomerToken(String customerToken) {
+		this.customerToken = customerToken;
 	}
 
 }
